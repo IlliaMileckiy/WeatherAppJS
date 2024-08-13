@@ -24,6 +24,7 @@ function searchLatLong(inputCityValue) {
             cityHumidity.textContent = "";
             cityPrecipitation.textContent = "";
             weatherImage.src = "";
+            cityWindSpeed.textContent = "";
             return;
         }
 
