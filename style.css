@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(242, 255, 240);
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    background: url("./img/cloud.png");
+    background-size: cover;
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    padding-top: 50px;
+}
+
+/*Block Search*/
+.block-search {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    background: linear-gradient(165deg, rgba(0,255,239,0.6561085972850679) 0%, rgba(73,73,73,0.6289592760180995) 100%);
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.input-city {
+    font-size: 14px;
+    color: #44a098;
+    border: none;
+    background: gainsboro;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.input-city:focus {
+    outline: none;
+    padding: 8px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.btn-search {
+    color: #44a098;
+    border: none;
+    background: gainsboro;
+    padding: 0px 5px 0px 5px;
+}
+.btn-search:hover {
+    color: white;
+    background: rgb(201, 200, 200);
+}
+.btn-search:active {
+    color: #000;
+    background: gainsboro;
+}
+/*Block Weather Info*/
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+
+/*Block Weather*/
+.block-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+}
+
+.city-name {
+    color: darkcyan;
+    font-size: 32px;
+}
+
+.weather-image {
+    margin-top: 50px;
+    width: 100px;
+}
+
+.city-tempreture {
+    font-size: 44px;
+    color: rgb(45, 95, 95);
+}
+.additional {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    color: rgb(45, 95, 95);
+}
